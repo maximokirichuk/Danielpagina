@@ -1,0 +1,312 @@
+:root {
+    --clr-main:rgb(41, 0, 94);
+    --clr--violeta-light: rgb(43, 2, 98);
+    --clr-main-light: rgb(229, 172, 252);
+    --clr-white: #ececec;
+    --clr-gray: #e2e2e2;
+    --clr-red: #961818;
+    --clr-black:black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+html, body{background: var(--clr--violeta-light)  center;margin:0;padding:0;height:100%;font-family:"Merriweather", verdana, sans-serif;font-size:16px;text-align:center;}
+a:link,a:visited{color:#fff;}
+a:hover{color:#a5a5a5;}
+
+form{
+    height: 100%;
+}
+
+h1{font-size:52px;font-weight:700;margin:0;padding:20px 0 0;}
+h2,h3{letter-spacing:6px;font-size:14px;color:#fff;margin:0;padding:20px 0;}
+
+
+
+
+
+
+
+
+
+
+
+.wrapper-fondo{
+    width: 85%;;
+    border-radius: 6px;
+    margin: 12px auto 20px;
+    background: var(--clr-main);
+    padding: 30px 0 30px;
+    font-size: 18px;
+    box-shadow: 0 0 855px rgba(255, 105, 180, 0.5); /* Color rosa: rgba(255, 105, 180, 0.5) */
+}
+
+/* Estilos para pantallas grandes */
+.wrapper-fondo {
+    width: 85%;
+ }
+ 
+.titulo{
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.titulo-h1{
+    font-family: 'Victor Mono', m;
+    font-size: 6rem;
+    margin-bottom: 30px;
+    color: var(--clr-white);
+}
+
+.titulo-h3{
+    font-family: cursive;
+    margin-top: 1rem;
+    color: var(--clr-main-light);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Consultas{
+
+    background: var(--clr-main-light);
+    width: 100%;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    z-index: 5;
+}
+
+.Consultas-a{
+    color: var(--clr-white);
+}
+
+div {
+    display: block;
+}
+
+.logo {
+    font-size: 13rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.form{
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+
+
+.servicios-img{
+    width: 300px; /* Tamaño deseado en píxeles */
+    height: 250px; /* Tamaño deseado en píxeles */
+    object-fit: cover; /* Esto mantendrá la proporción y recortará la imagen si es necesario */
+    border-radius: 1rem;
+    box-shadow: 30px 10px;
+    box-sizing: border-box;
+}
+
+.servicios {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1rem;
+text-align: center;
+font-weight: 700;
+margin-bottom: 24px;
+box-sizing: content-box;
+
+}
+
+.servicios-h3{
+    background-color:solid;
+    color: rgb(255, 255, 255);
+}
+
+
+
+@media only screen and (max-width: 480px){
+    .servicios{
+        grid-template-columns: 1fr
+    }
+    .servicios-img{
+        object-fit: cover;
+        box-sizing: content-box;
+        width:12rem;
+        height:12rem;
+        
+    }
+    
+        .wrapper_contacto {
+            width: 90%; /* Cambiado a 90% para centrarlo más en pantallas pequeñas */
+            margin-left: auto; /* Centrado horizontalmente */
+            margin-right: auto;
+            padding: 10px; /* Menor padding en pantallas pequeñas */
+            box-shadow: 10px 5px 5px 5px; /* Ajuste de la sombra */
+        }
+        /* Estilos para grupos en el formulario de contacto */
+.form-group {
+    margin-bottom: 15px; /* Ajuste del espacio inferior entre grupos */
+  }
+  
+  /* Estilos para etiquetas en el formulario de contacto */
+  .label_contacto {
+    display: block;
+    margin-bottom: 5px;
+    color: #acacac;
+    font-size: 0.3rem; /* Ajuste del tamaño de la etiqueta */
+  }
+  input, button{
+    width: 7rem;
+    height: 4rem;
+    margin: auto;
+  }
+  .label_contacto h1{
+    font-size: 1rem;
+  }
+  /* Estilos para inputs y textarea en el formulario de contacto */
+
+    }
+
+
+
+
+.a{border: 0;
+background-color: var(--clr-white);
+color: var(--clr-main);
+padding: .4rem;
+text-transform: uppercase;
+border-radius: 2rem;
+cursor: pointer;
+border: 2px solid var(--clr-white);
+transition: background-color .2s, color .2s;
+}
+
+footer {
+    color: var(--clr-main-light);
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row; /* Establece la dirección del contenedor flex a fila (horizontal) */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+}
+
+.footer a {
+    margin: 0 10px; /* Ajusta el espacio entre los enlaces */
+}
+.logo-wh{
+    display: block;
+    position: fixed;
+    bottom: 17px;
+    left: 15px;
+    width: 52px;
+    padding: 10px 0 5px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #333333;
+    z-index: 99;
+}
+
+
+/*QUIEN SOY*/
+
+.quien-soy{
+    text-align: center;
+    align-items: center;
+}
+
+ /*CONTACTO*/
+
+/* Contenedor del formulario */
+.wrapper_contacto {
+    background-color: var(--clr--violeta-light);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 40%; /* Cambiado a 90% para centrarlo más */
+    margin-left: 7rem; /* Centrado horizontalmente */
+    padding: 20px;
+    box-sizing:border-box;
+    box-shadow: 30px 10px 10px 10px;
+}
+
+/* Títulos */
+.wrapper_contacto h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label_contacto {
+    display: block;
+    margin-bottom: 5px;
+    color: #acacac;
+    font-size: 1.2rem;
+}
+
+.input_contacto,
+.text_area {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botón */
+.button_contacto {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button_contacto:hover {
+    background-color: #7fcafc;
+}
+
+
+
+
