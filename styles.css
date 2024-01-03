@@ -135,7 +135,7 @@ div {
     object-fit: cover; /* Esto mantendrá la proporción y recortará la imagen si es necesario */
     border-radius: 1rem;
     box-shadow: 30px 10px;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 .servicios {
@@ -215,11 +215,11 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 40%; /* Cambiado a 90% para centrarlo más */
-    margin-left: 7rem; /* Centrado horizontalmente */
     padding: auto;
     box-sizing:border-box;
     box-shadow: 30px 10px 10px 10px;
     align-items: center;
+    margin: 12px auto 20px;
 }
 
 /* Títulos */
@@ -273,9 +273,14 @@ footer {
 
                 /*media queries*/
 
-                @media only screen and (max-width: 600px){
+                @media screen and (max-width: 600px){
+                    
+                .logo{
+                  width: 350px;
+                }
                     .wrapper-fondo{
                         grid-template-columns: 1fr;
+                        
                     }
                 
                     .servicios{
@@ -284,8 +289,11 @@ footer {
                     main{    
                         grid-template-columns: 1fr;
                     }
+                    .titulo h1{
+                        font-size:5.2rem;
+                    }
                     
-                        .wrapper_contacto {
+                    .wrapper_contacto {
                             width: 90%; /* Cambiado a 90% para centrarlo más en pantallas pequeñas */
                             margin-left: auto; /* Centrado horizontalmente */
                             margin-right: auto;
