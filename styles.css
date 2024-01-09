@@ -51,7 +51,7 @@ h1{font-size:52px;font-weight:700;margin:0;padding:20px 0 0;}
     border-radius: 6px;
     margin: 12px auto 20px;
     background: var(--clr-main);
-    padding: 30px 0 30px;
+    padding: 0px 0 30px;
     font-size: 18px;
     box-shadow: 0 0 855px rgba(255, 105, 180, 0.5); /* Color rosa: rgba(255, 105, 180, 0.5) */
     box-sizing: content-box;
@@ -62,10 +62,7 @@ h1{font-size:52px;font-weight:700;margin:0;padding:20px 0 0;}
     width: 85%;
  }
  
-.titulo{
-    margin: 50px;
-    margin-bottom: 30px;
-}
+
 
 .titulo-h1{
     font-family: 'Victor Mono', m;
@@ -76,8 +73,9 @@ h1{font-size:52px;font-weight:700;margin:0;padding:20px 0 0;}
 
 .titulo-h3{
     font-family: cursive;
-    margin-top: 1rem;
+    margin-top: 2rem;
     color: var(--clr-main-light);
+    margin-bottom: 3rem;
 }
 
 ul {
@@ -287,6 +285,7 @@ footer {
                         width: 200px; /* Make the image take the full width of its container */
                         height: 150px; /* Adjust the image height to maintain its aspect ratio */
                         object-fit: cover; /* Make the images cover the entire space */
+                        box-shadow: 10px 10px;
                     }
                     .wrapper_contacto {
                         width: 90%; /* Adjust the contact wrapper width on small screens */
@@ -311,8 +310,10 @@ footer {
                         grid-template-columns: repeat(2, 1fr); /* Adjust the services layout on medium screens */
                     }
                     .servicios-img{
-                        width: 100%; /* Make the image take the full width on medium screens */
-                        ; /* Adjust the image height on medium screens */
+                        width: 200px; /* Make the image take the full width of its container */
+                        height: 150px; /* Adjust the image height to maintain its aspect ratio */
+                        object-fit: cover; /* Make the images cover the entire space */
+                        box-shadow: 20px 10px;
                     }
                     .wrapper_contacto {
                         width: 80%; /* Adjust the contact wrapper width on medium screens */
