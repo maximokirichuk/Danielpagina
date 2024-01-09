@@ -273,7 +273,7 @@ footer {
                 /*media queries*/
                 @media screen and (max-width: 600px){
                     .logo{
-                        
+                        width: 95%;
                     }
                     .titulo-h1{
                         font-size: 3rem; /* Reduce the title size on small screens */
