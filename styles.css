@@ -47,13 +47,14 @@ h1{font-size:52px;font-weight:700;margin:0;padding:20px 0 0;}
 
 
 .wrapper-fondo{
-    width: 85%;;
+    width: 100%;;
     border-radius: 6px;
     margin: 12px auto 20px;
     background: var(--clr-main);
     padding: 30px 0 30px;
     font-size: 18px;
     box-shadow: 0 0 855px rgba(255, 105, 180, 0.5); /* Color rosa: rgba(255, 105, 180, 0.5) */
+    box-sizing: content-box;
 }
 
 /* Estilos para pantallas grandes */
@@ -62,14 +63,14 @@ h1{font-size:52px;font-weight:700;margin:0;padding:20px 0 0;}
  }
  
 .titulo{
-    margin: 10px;
+    margin: 50px;
     margin-bottom: 30px;
 }
 
 .titulo-h1{
     font-family: 'Victor Mono', m;
     font-size: 6rem;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     color: var(--clr-white);
 }
 
@@ -110,10 +111,10 @@ div {
 }
 
 .logo {
-    font-size: 13rem;
-    color: #ffffff;
-    margin-bottom: 20px;
-    text-align: center;
+    width: 70%; /* Make the logo smaller */
+    display: block; /* Make the logo a block element */
+    margin: 0 auto; /* Center the logo */
+    margin-top: 3rem;
 }
 
 .titulo{
@@ -272,61 +273,51 @@ footer {
 
 
                 /*media queries*/
-
                 @media screen and (max-width: 600px){
-                    
-                .logo{
-                  width: 350px;
-                }
-                    .wrapper-fondo{
-                        grid-template-columns: 1fr;
+                    .logo{
                         
                     }
-                
+                    .titulo-h1{
+                        font-size: 3rem; /* Reduce the title size on small screens */
+                    }
                     .servicios{
-                        grid-template-columns: none;
+                        grid-template-columns: 1fr; /* Stack the services on top of each other on small screens */
                     }
-                    main{    
-                        grid-template-columns: 1fr;
+                    .servicios-img{
+                        width: 200px; /* Make the image take the full width of its container */
+                        height: 150px; /* Adjust the image height to maintain its aspect ratio */
+                        object-fit: cover; /* Make the images cover the entire space */
                     }
-                    .titulo h1{
-                        font-size:5.2rem;
-                    }
-                    
                     .wrapper_contacto {
-                            width: 90%; /* Cambiado a 90% para centrarlo más en pantallas pequeñas */
-                            margin-left: auto; /* Centrado horizontalmente */
-                            margin-right: auto;
-                            padding: 10px; /* Menor padding en pantallas pequeñas */
-                            box-shadow: 10px 5px 5px 5px; /* Ajuste de la sombra */
-                        }
-                        /* Estilos para grupos en el formulario de contacto */
-                .form-group {
-                    margin-bottom: 15px; /* Ajuste del espacio inferior entre grupos */
-                  }
-                  
-                  /* Estilos para etiquetas en el formulario de contacto */
-                  .label_contacto {
-                    display: block;
-                    margin-bottom: 5px;
-                    color: #ada3a3;
-                    font-size: 1rem; /* Ajuste del tamaño de la etiqueta */
-                    box-sizing: border-box;
-                  }
-                  input, button{
-                    width: 7rem;
-                    height: 4rem;
-                    margin: auto;
-                  }
-                  .label_contacto h2{
-                    font-size: 2rem;
-                  }
-                
-                  input{
-                    height: 3rem;
-                    width: 12rem;
-
-                  }
-                  /* Estilos para inputs y textarea en el formulario de contacto */
-                
+                        width: 90%; /* Adjust the contact wrapper width on small screens */
+                        padding: 10px; /* Reduce padding on small screens */
                     }
+                    .form-group {
+                        margin-bottom: 10px; /* Reduce margin on small screens */
+                    }
+                    .label_contacto {
+                        font-size: 0.8rem; /* Reduce font size on small screens */
+                    }
+                }
+                
+                @media screen and (min-width: 601px) and (max-width: 1024px){
+                    .logo{
+                        font-size: 8rem; /* Adjust the logo size on medium screens */
+                    }
+                    .titulo-h1{
+                        font-size: 4rem; /* Adjust the title size on medium screens */
+                    }
+                    .servicios{
+                        grid-template-columns: repeat(2, 1fr); /* Adjust the services layout on medium screens */
+                    }
+                    .servicios-img{
+                        width: 100%; /* Make the image take the full width on medium screens */
+                        ; /* Adjust the image height on medium screens */
+                    }
+                    .wrapper_contacto {
+                        width: 80%; /* Adjust the contact wrapper width on medium screens */
+                    }
+                    .label_contacto {
+                        font-size: 1rem; /* Adjust font size on medium screens */
+                    }
+                }
